@@ -6,7 +6,7 @@ qAnimate is a Work In Progress jQuery Plugin that contains useful animations to 
 ### makeSlider({options})
 
 Make a slider with the parameters introduced into the function, you should add the CSS class you want to apply to the
-elements when focused class comes in, focused class applies to list element (<li>) that is in the focus of the slider.
+elements when focused class comes in, focused class applies to list element that is in the focus of the slider.
 
 Options: 
 
