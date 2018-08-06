@@ -10,11 +10,11 @@ elements when focused class comes in, focused class applies to list element that
 
 Options: 
 
-	- focusedClass:String :: [<li> tag] Applies to the current focused element, it changes to the next/previous element when the controls are triggered.
-	- disabledClass:String :: [<li> tag] Apllies to the non-focused element, by default is set to all elements except the first child of parent.
-	- leftCtrl:String :: [<any>] Applies to the move-right control, that makes the slider go forwards.
-	- rightCtrl:String :: [<any>] Applies to the move-left control, that makes the slider go backwards.
-	- controlsInside:Boolean :: Specify if the left/right controls are inside the container of the list, if not the plugin will search for it on the entire page.
+	-focusedClass:String :: [<li> tag] Applies to the current focused element, it changes to the next/previous element when the controls are triggered.
+	-disabledClass:String :: [<li> tag] Apllies to the non-focused element, by default is set to all elements except the first child of parent.
+	-leftCtrl:String :: [<any>] Applies to the move-right control, that makes the slider go forwards.
+	-rightCtrl:String :: [<any>] Applies to the move-left control, that makes the slider go backwards.
+	-controlsInside:Boolean :: Specify if the left/right controls are inside the container of the list, if not the plugin will search for it on the entire page.
 
 ### makeMenu({options})
 
