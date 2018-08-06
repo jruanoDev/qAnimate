@@ -22,9 +22,9 @@ Make a side menu with the options specified, as makeSlider does, the CSS classes
 
 Options:
 
-	- animClass:String :: [<li/any> tag] Applies the animations to the list elements in the menu.
-	- menuSelector:String :: [<any>] Container of the menu element, it must be the parent of the entire menu. Example: [<div (menuSelector)> <ul> <li> ... </ul> </div>]
-	- closeSelector:String :: [<any>] Specifies the element that user must click on to close the menu.
+- animClass:String :: [<li/any> tag] Applies the animations to the list elements in the menu.
+- menuSelector:String :: [<any>] Container of the menu element, it must be the parent of the entire menu. Example: [<div (menuSelector)> <ul> <li> ... </ul> </div>]
+- closeSelector:String :: [<any>] Specifies the element that user must click on to close the menu.
 
 ### fadeInWithAnim(delay, selectedClass)
 
@@ -32,8 +32,8 @@ Trigger a CSS animation (specified by the user) iterating by all the selected el
 
 Parameters:
 	
-	- delay:Integer :: Specifies the delay between animations on the elements.
-	- selectedClass:String :: Specifies the class to trigger the effects on element.
+- delay:Integer :: Specifies the delay between animations on the elements.
+- selectedClass:String :: Specifies the class to trigger the effects on element.
 
 ### fadeOutWithAnim(delay, selectedClass, callback)
 
@@ -41,6 +41,6 @@ Trigger a CSS animation iterating between elements with a delay, when all procce
 
 Parameters:
 
-	- delay:Integer :: Specifies the delay between animations on the elements.
-	- selectedClass:String :: Specifies the class to trigger the effects when element go out.
-	- callback:Function :: Function called when all elements are out.
+- delay:Integer :: Specifies the delay between animations on the elements.
+- selectedClass:String :: Specifies the class to trigger the effects when element go out.
+- callback:Function :: Function called when all elements are out.
