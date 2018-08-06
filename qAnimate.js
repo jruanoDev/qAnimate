@@ -80,4 +80,95 @@
             });
         });
     };
+
+    let menuDefaults = {
+        animClass: null,
+        menuSelector: null,
+        closeSelector: null
+    };
+
+    $.fn.makeMenu = function(options) {
+        menuSettings = $.extend({}, menuDefaults, options || {});
+        let abierto = false;
+
+        return this.each(function() {
+            let menuButton = $(this),
+                buttonClass = $(this).attr("class"),
+                closeSelector = menuSettings.closeSelector,
+                menuSelector = menuSettings.menuSelector,
+                animClass = menuSettings.animClass,
+                menuItems = $(menuSelector + " ul li").get();
+
+            menuButton.on('click', function() {
+               if(abierto) {
+                   menuButton.removeClass(closeSelector).addClass(buttonClass);
+
+                   $(menuItems).fadeOutWithAnim(100, animClass, function() {
+                       $(menuSelector).fadeOut(450);
+                       $("body").css("overflow-y", "auto");
+                   });
+
+                   $(".social-icons, .phone-icon, #bloque-cambiar-idioma").fadeIn(450);
+                   $(".bloque-footerrrss-2, header .bloque-telefono").fadeOut(450);
+
+                   abierto = false;
+               } else {
+                   menuButton.addClass(closeSelector).removeClass(buttonClass);
+
+                   $(menuSelector).fadeIn(450);
+                   $(menuItems).fadeInWithAnim(100, animClass);
+
+                   $("body").css("overflow-y", "hidden");
+
+                   $(".social-icons, .phone-icon, #bloque-cambiar-idioma").fadeOut(450);
+                   $(".bloque-footerrrss-2, .bloque-telefono").fadeIn(450);
+
+                   abierto = true;
+               }
+            });
+        });
+    };
+
+    $.fn.fadeInWithAnim = function(delay, selectedClass) {
+        let timeOuts = [];
+
+        function makeEffect(obj) {
+            obj.addClass(selectedClass);
+        }
+        function clearAllTimeouts() {
+            for (key in timeOuts) {
+                clearTimeout(timeOuts[key]);
+            }
+        }
+        clearAllTimeouts();
+        $(this).each(function(index) {
+            timeOuts[index] = setTimeout(makeEffect, index * delay, $(this));
+        });
+    };
+
+    $.fn.fadeOutWithAnim = function(delay, selectedClass, callback) {
+        let timeOuts = [],
+            menu = $(this);
+
+        function makeEffect(obj) {
+            obj.removeClass(selectedClass);
+        }
+        function clearAllTimeouts() {
+            for (key in timeOuts) {
+                clearTimeout(timeOuts[key]);
+            }
+        }
+        clearAllTimeouts();
+        $(this).each(function(index) {
+            timeOuts[index] = setTimeout(makeEffect, index * delay, $(this));
+            if(index == menu.length - 1) {
+                if(typeof callback == 'function')
+                    setTimeout(function() {
+                        callback();
+                    }, index * delay);
+            }
+
+        });
+    }
+
 }(jQuery));
