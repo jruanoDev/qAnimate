@@ -22,9 +22,9 @@ Make a side menu with the options specified, as makeSlider does, the CSS classes
 
 Options:
 
-- animClass:String :: [<li/any> tag] Applies the animations to the list elements in the menu.
-- menuSelector:String :: [<any>] Container of the menu element, it must be the parent of the entire menu. Example: [<div (menuSelector)> <ul> <li> ... </ul> </div>]
-- closeSelector:String :: [<any>] Specifies the element that user must click on to close the menu.
+- animClass:String :: Specifies the class that contains animations that will apply to the menu itself and its child elements.
+- openButton:String :: DOM element to open menu.
+- closeButton:String :: DOM element to close menu.
 
 ### fadeInWithAnim(delay, selectedClass)
 
