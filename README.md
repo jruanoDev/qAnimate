@@ -1,17 +1,14 @@
 # qAnimate
+:computer: [![NPM version](https://img.shields.io/badge/npm%20version-1.0.1-blue.svg)](https://www.npmjs.com/package/qanimate)
+:page_facing_up: [![minified size](https://img.shields.io/badge/minified%20size-3.05%20kb-green.svg)](https://github.com/jruanoDev/qAnimate/tree/master/minified)
 
-<p align="center">
-    [![npm version](https://img.shields.io/badge/npm%20version-1.0.1-blue.svg)](https://www.npmjs.com/package/qanimate)
-    :page_facing_up: [![minified size](https://img.shields.io/badge/minified%20size-3.05%20kb-green.svg)](https://github.com/jruanoDev/qAnimate/tree/master/minified)
-</p>
-
-qAnimate is a jQuery Plugin that contains useful animations to use on all kinds of web proyects, containing sliders, text effects, etc. All made with JS
+**qAnimate** is a **jQuery Plugin** that contains useful animations to use on all kinds of web proyects, containing sliders, text effects, etc. All made with JS
 
 The idea behind this project is to provide the logic that make work all the elements,
 leaving to the developer the task to implement styles, including animations,
 structure, times, etc.
 
-Using this idea you can make fully customizable components for your applications/website
+Using this idea you can make **fully customizable components** for your applications/website
 faster than making it all from scratch.
 
 Who wants this "pre made look" on your cool website? :wink:
