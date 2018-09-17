@@ -1,46 +1,75 @@
 # qAnimate
-qAnimate is a Work In Progress jQuery Plugin that contains useful animations to use on all kinds of web proyects, containing sliders, text effects, etc. All made with CSS & JS
+
+<p align="center">
+    [![npm version](https://img.shields.io/badge/npm%20version-1.0.1-blue.svg)](https://www.npmjs.com/package/qanimate)
+    :page_facing_up: [![minified size](https://img.shields.io/badge/minified%20size-3.05%20kb-green.svg)](https://github.com/jruanoDev/qAnimate/tree/master/minified)
+</p>
+
+qAnimate is a jQuery Plugin that contains useful animations to use on all kinds of web proyects, containing sliders, text effects, etc. All made with JS
+
+The idea behind this project is to provide the logic that make work all the elements,
+leaving to the developer the task to implement styles, including animations,
+structure, times, etc.
+
+Using this idea you can make fully customizable components for your applications/website
+faster than making it all from scratch.
+
+Who wants this "pre made look" on your cool website? :wink:
+
+## How to install
+
+First, make sure you have installed [jQuery](https://jquery.com/download/) and it is included in your application
+
+``<script src="path/to/the/file/jquery-x.y.z.min.js">``
+
+It is required by qAnimate since it is a jQuery plugin.
+
+<br/>
+
+To install qAnimate clone this repo or run in your console:
+
+``npm install qanimate``
+
+Then include in your HTML with a line like this:
+
+``<script src="path/to/the/file/qanimate.js">``
+> If you installed via NPM you can find the project files in /node-modules
 
 ## Functions
+###### You can find more in-depth documentation in the [Wiki](https://github.com/jruanoDev/qAnimate/wiki)
 
 ### makeSlider({options})
 
-Make a slider with the parameters introduced into the function, you should add the CSS class you want to apply to the
-elements when focused class comes in, focused class applies to list element that is in the focus of the slider.
-
-Options: 
-
-- focusedClass:String :: [<li> tag] Applies to the current focused element, it changes to the next/previous element when the controls are triggered.
-- disabledClass:String :: [<li> tag] Apllies to the non-focused element, by default is set to all elements except the first child of parent.
-- leftCtrl:String :: [<any>] Applies to the move-right control, that makes the slider go forwards.
-- rightCtrl:String :: [<any>] Applies to the move-left control, that makes the slider go backwards.
-- controlsInside:Boolean :: Specify if the left/right controls are inside the container of the list, if not the plugin will search for it on the entire page.
+Provides the logic required to make a functional slider, it works by scrolling between
+the different components on a scrolling container.
 
 ### makeMenu({options})
 
-Make a side menu with the options specified, as makeSlider does, the CSS classes that applies to the elements in the menú must be set by the user, as well as transitions, animations, etc.
-
-Options:
-
-- animClass:String :: Specifies the class that contains animations that will apply to the menu itself and its child elements.
-- openButton:String :: DOM element to open menu.
-- closeButton:String :: DOM element to close menu.
+Makes a side/offCanvas menu (you can style it as you want), customization is allways
+a developer task, makeMenu does not provide any pre-made style.
 
 ### fadeInWithAnim(delay, selectedClass)
 
-Trigger a CSS animation (specified by the user) iterating by all the selected elements with a specific delay.
-
-Parameters:
-	
-- delay:Integer :: Specifies the delay between animations on the elements.
-- selectedClass:String :: Specifies the class to trigger the effects on element.
+Applies a fadeIn animation to every element in a selection, recursivelly.
 
 ### fadeOutWithAnim(delay, selectedClass, callback)
 
-Trigger a CSS animation iterating between elements with a delay, when all proccess is completed a callback is called.
+Applies a fadeOut animation to every element in a selection, recursivelly.
 
-Parameters:
+## Coming in next versions
 
-- delay:Integer :: Specifies the delay between animations on the elements.
-- selectedClass:String :: Specifies the class to trigger the effects when element go out.
-- callback:Function :: Function called when all elements are out.
+- Refactor code to not requiring jQuery anymore
+- Simplify code to make it easier to implement
+- Provide pre-made bits of UI elements
+
+## Contact and issues/contributing
+
+If you find a bug, or if you are interested on a new feature, you can submit a
+ticket on [Issues](https://github.com/jruanoDev/qAnimate/issues) tab, I'll be
+there to read your ideas!
+
+If you want to contact me/contribute those are my contact links
+
+:email: jruanogalvez@gmail.com
+
+I'll be happy to talk to you :smiley:
