@@ -1,6 +1,6 @@
-# qAnimate
-:computer: [![NPM version](https://img.shields.io/badge/npm%20version-1.0.1-blue.svg)](https://www.npmjs.com/package/qanimate)
-:page_facing_up: [![minified size](https://img.shields.io/badge/minified%20size-3.05%20kb-green.svg)](https://github.com/jruanoDev/qAnimate/tree/master/minified)
+# qAnimate - Create awesome components! :rainbow: :thought_balloon:
+[![NPM version](https://img.shields.io/badge/npm%20version-1.0.1-blue.svg)](https://www.npmjs.com/package/qanimate)
+[![minified size](https://img.shields.io/badge/minified%20size-3.05%20kb-green.svg)](https://github.com/jruanoDev/qAnimate/tree/master/minified)
 
 **qAnimate** is a **jQuery Plugin** that contains useful animations to use on all kinds of web proyects, containing sliders, text effects, etc. All made with JS
 
