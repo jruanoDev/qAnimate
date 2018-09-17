@@ -1,6 +1,6 @@
 {
   "name": "qanimate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JavaScript library containing pre-made components to make easier to implement on a website.",
   "main": "qanimate.js",
   "scripts": {
