@@ -1,0 +1,30 @@
+{
+  "name": "qanimate",
+  "version": "1.0.0",
+  "description": "A JavaScript library containing pre-made components to make easier to implement on a website.",
+  "main": "qanimate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jruanoDev/qAnimate.git"
+  },
+  "keywords": [
+    "javascript",
+    "animations",
+    "effects",
+    "components",
+    "menu",
+    "slider",
+    "website",
+    "drupal",
+    "wordpress"
+  ],
+  "author": "Jose Ruano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jruanoDev/qAnimate/issues"
+  },
+  "homepage": "https://github.com/jruanoDev/qAnimate#readme"
+}
