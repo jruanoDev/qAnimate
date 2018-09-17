@@ -32,6 +32,13 @@ Then include in your HTML with a line like this:
 ``<script src="path/to/the/file/qanimate.js">``
 > If you installed via NPM you can find the project files in /node-modules
 
+## Where is it used?
+
+This project has been used on those websites
+
+- [Oro de Cánava](http://oro.quanticoapps.com) - Slider
+- [Confitería Blanco](http://confiteriablanco.com) - Side menu
+
 ## Functions
 ###### You can find more in-depth documentation in the [Wiki](https://github.com/jruanoDev/qAnimate/wiki)
 
